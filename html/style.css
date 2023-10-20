@@ -1,0 +1,496 @@
+/* Palheta de coresUsada */
+#PalhetaDeCores {
+  color: #CCFFBD;
+  color: #7ECA9C;
+  color: #40394A;
+  color: #1C1427;
+}
+
+
+
+/* Slideshow */
+.slideshow .slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  top: 0%;
+  z-index: 1;
+}
+
+/* Conferindo que a primeira imagem já vai estar a mostra */
+#primeiraImg {
+  display: block;
+}
+
+.slideshow .mySlides {
+  display: none;
+  animation: fade 1s;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 750px;
+  border-radius: 10px;
+}
+
+.slideshow .prev,
+.slideshow .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: #40394A;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 0.4s;
+  user-select: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #7ECA9C;
+  border-radius: 10px;
+  color: #1c1427;
+}
+
+.slideshow .prev {
+  left: 0;
+}
+
+.slideshow .next {
+  right: 0;
+}
+
+/* Colocando texto e botão dentro do slide show */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* Animação do slideshow */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* ------------------Fim SlideShow --------------- */
+
+
+
+
+body {
+  background: #1C1427;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+
+
+/* Header */
+header {
+  width: 100%;
+  height: 200px;
+
+}
+
+/* Logo */
+
+header img {
+  width: 160px;
+  height: 160px;
+  margin: 16px 80px;
+}
+/* ------------------Fim logo --------------- */
+
+
+/* Area de navegação  */
+nav {
+  width: 20%;
+  height: 200px;
+  float: right;
+  font-size: 18px;
+
+}
+
+/* Colunas "invisiveis" na navegação */
+.preenchimento{
+  float: left;
+  width: 25%;
+  height: 200px;
+}
+
+
+
+/* Botao sobre */
+.sobre {
+  float: left;
+  width: 50%;
+  color: #7ECA9C;
+  padding: 14px;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 33px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sobre:hover{
+  background-color: #7ECA9C;
+  color: #1c1427;
+
+}
+/* ------------------Fim botao sobre --------------- */
+
+
+/* Menu Categoria */
+
+/* botao categoria */
+.dropdownbtn {
+  float: left;
+  width: 50%;
+  height: 50px;
+  color: #7ECA9C;
+  padding: 14px;
+  transition: 0.2s;
+  text-align: center;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+
+/* links em categorias */
+
+/* Bloco que contem os links em categorias */
+.dropdown-content {
+  display: none;
+  text-decoration: none;
+  position: absolute;
+  width: 151.9px;
+  z-index: 2;
+  background-color: #40394A;
+  margin: 169px 76px;
+  border-radius: 0px 0px 5px 5px;
+  transition: all 0.4s;
+}
+
+/* estilizando links em categorias */
+.dropdown-content a {
+  text-decoration: none;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  display: block;
+  text-align: center;
+  background-color: #40394A;
+  border-radius: 0px 0px 5px 5px;
+  color: #7ECA9C;
+}
+
+.dropdown-content a:hover {
+  background-color: #7ECA9C;
+  color: #1c1427;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdownbtn {
+  background-color: #7ECA9C;
+  color: #1c1427;
+  border-radius: 5px 5px 0px 0px;
+}
+
+/* ------------------Fim Menu Categoria --------------- */
+
+/* ------------------Fim Header --------------- */
+
+
+
+/* Area Principal - Section */
+
+/* Colunas laterais */
+aside{
+  float: left;
+  width: 20%;
+  height: 600px;
+}
+
+
+/* Conteudo princial */
+article{
+  float: left;
+  width: 60%;
+  min-height: 600px;
+  background-color: #40394A;
+  color: #CCFFBD;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/* Textos */
+article h1{
+  color: #7ECA9C;
+  font-size: 24px;
+}
+
+article h3{
+  text-align: center;
+  color: #7ECA9C;
+}
+
+article p{
+  text-align: justify;
+}
+
+
+ /* Fotos */
+article img{
+  width: 49%;
+  border-radius: 5px;
+  transition: all 0.4s;
+  margin-top: 25px;
+}
+
+/* foto a direita */
+#imgJarRight{
+  float: right;
+}
+/* -------- Fim fotos -------- */
+
+article img:hover{
+  transform: scale(1.05);
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px #00000050;
+}
+/* ------------------Fim conteudo principal --------------- */
+
+section::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/* ------------------Fim Area principal - Section --------------- */
+
+
+
+/* ----- FOOTER ----- */
+footer {
+  width: 100%;
+  min-height: 140px;
+}
+
+/* Colunas fotter (3 colunas no total)*/
+.column {
+  float: left;
+  width: 33.33%;
+  height: 100px;
+  text-align: center;
+  color: #7ECA9C;
+  cursor: default;
+}
+
+
+/* Coluna a direita - Contato */
+
+/* Botão do GiThub Contato */
+.myGitBtn {
+  display: grid;
+  place-items: center;
+  background: #40394A;
+  padding: 1.4em;
+  border-radius: 10px;
+  border: 1px solid #00000000;
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin: 13px 225px;
+}
+
+.myGitBtn:hover {
+  box-shadow: inset 4px 4px 6px -1px #7ECA9C33,
+    inset -4px -4px 6px -1px #CCFFBD99,
+    -0.5px -0.5px 0px #CCFFBD,
+    0.5px 0.5px 0px #7ECA9C33,
+    0px 12px 10px -10px #7ECA9C33;
+  background-color: #7ECA9C;
+  border: 1px solid #7ECA9C33;
+  transform: translateY(0.5em);
+}
+
+.myGitBtn svg {
+  transition: transform 0.5s;
+}
+
+.myGitBtn:hover svg {
+  transform: scale(0.9);
+  fill: #1C1427;
+}
+/* ------------------Fim botao github contato --------------- */
+
+
+
+/* Coluna central */
+
+/* Texto de aviso "Site para fins educacionais"*/
+
+.desc {
+  margin: 40px 96.5px;
+  box-sizing: border-box;
+  padding: 5px 8px;
+  width: 310px;
+  transition: 0.2s;
+  color: #CCFFBD;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.desc:hover {
+  color: #40394A;
+  background-color: #CCFFBD;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+/* ------------------Fim texto de aviso --------------- */
+
+
+
+
+/* Coluna a esquerda - Agradecimentos  */
+
+#campAgd h4{
+  float: left;
+  margin: 13px 25px 13px 140px;
+  color: #CCFFBD;
+  cursor: default;
+}
+
+
+/* Botao github agradecimentos */
+
+/* botao github */
+.Btngit {
+  float: left;
+  width: 50px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+/* bloco de fundo */
+.BGGit {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #40394A;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.Btngit:hover svg{
+  fill: #1c1427;
+}
+.Btngit:hover .BGGit {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+  background-color: #7ECA9C;
+}
+
+.Btngit:hover .svgContainer {
+  background-color: #9c9c9c77;
+  backdrop-filter: blur(4px);
+}
+/* ------------------Fim botao github agradecimentos --------------- */
+
+
+/* botao agradecimentos insta */
+
+/* botao */
+.BtnIsta {
+  float: left;
+  width: 50px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+  margin-left: 20px;
+}
+
+/* bloco de fundo  */
+.BGIsta {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+
+.BtnIsta:hover .BGIsta{
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+.BtnIsta:hover .svgContainer {
+  background-color: #9c9c9c77;
+}
+/* ------------------Fim botao instagram agradecimentos --------------- */
+
+
+/* Estilo dos svg em agradecimentos */
+.svgContainer {
+  min-width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid #9c9c9c77;
+}     
+
+/* ------------------Fim Fim de FOOTER --------------- */

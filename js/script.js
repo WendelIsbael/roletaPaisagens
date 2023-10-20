@@ -2,6 +2,7 @@ var slideIndex = 1;
 slideIndex = 1; // Defina o slideIndex como 1 para mostrar a primeira imagem ao carregar a página
 showSlides(slideIndex);
 
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
